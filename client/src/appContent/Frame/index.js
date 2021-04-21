@@ -2,9 +2,10 @@ import React from "react";
 import { makeStyles, Box } from "@material-ui/core";
 import NavBar from "./NavBar";
 
-const Frame = ({ children }) => {
-  const classes = useStyles();
 
+const Frame = ({ children }) => {
+
+  const classes = useStyles();
   return (
     <Box className={classes.continer}>
       <NavBar />
@@ -18,7 +19,7 @@ const useStyles = makeStyles({
     backgroundColor: "#282c34",
     width: "100%",
     height: "100vh",
-    overflow: "hidden",
+    overflow:'hidden'
   },
 });
 
